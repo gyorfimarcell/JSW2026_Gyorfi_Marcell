@@ -197,3 +197,45 @@ main {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    input {
+      width: 100%;
+
+      padding: 0.25rem 0.75rem;
+      border-radius: 0.3rem;
+    }
+  }
+
+  button {
+    padding: 0.5rem 0.75rem;
+    background-color: var(--color-darkblue);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+
+    &:hover {
+      background-color: rgba(from var(--color-darkblue) r g b / 0.9);
+    }
+  }
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--color-darkblue);
+  color: white;
+  text-align: center;
+}
